@@ -1,0 +1,65 @@
+.userBox {
+    height: 30px;
+    width: 208px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    cursor: pointer;
+    position: relative;
+
+    &__name {
+        text-align: center;
+        color: rgb(79, 79, 79);
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: bold;
+        user-select: none;
+        margin-left: 30px;
+    }
+
+    &__arrow {
+        height: 12px;
+        width: 12px;
+        margin: 0 15px 0 auto;
+        transition: transform 0.25s ease-in 0s;
+        transform: rotate(0deg);
+
+        &_active {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        top: 31px;
+        width: 100%;
+        border-radius: 15px;
+        transition: max-height 0.25s ease-in 0s;
+        max-height: 0px;
+        background-color: rgb(255, 255, 255);
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 25px;
+
+        &_active {
+            max-height: 200px;
+        }
+
+        &-item {
+            height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            transition: background-color 0.25s ease-in 0s;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            color: rgb(34, 34, 34);
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+        }
+    }
+}

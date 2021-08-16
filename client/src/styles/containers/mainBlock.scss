@@ -1,0 +1,22 @@
+.content {
+    width: calc(100% - 80px);
+    margin-left: 80px;
+    margin-top: 150px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+       margin: 20px 0;
+       font-size: 1.5em;
+    }
+}
+
+.recent {
+    margin-top: 0;
+}
+

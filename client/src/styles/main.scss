@@ -1,0 +1,56 @@
+@import './reset.scss';
+@import './components/main.scss';
+@import './containers/main.scss';
+@import './media.scss';
+@import 'node_modules/react-datepicker/src/stylesheets/datepicker.scss';
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,600&subset=cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600,700&subset=cyrillic);
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border: 0.5px solid grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #33cc00;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #39e600;
+}
+
+.wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto Condensed,sans-serif;
+    scrollbar-color:#33cc00;
+    scrollbar-width: 10px;
+    scrollbar-track-color: white;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.3s ease-in-out;
+    }
+}
+

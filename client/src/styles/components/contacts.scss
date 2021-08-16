@@ -1,0 +1,165 @@
+$map-bg-default: grey;
+$share-svg-fill: black;
+$main-font: Open Sans,sans-serif;
+$input-border: lightgreen;
+$input-shadow-focus: lightgreen;
+$textarea-border: lightgreen;
+$fb-text: whitesmoke;
+$fb-bg: #00b300;
+$fb-bg-hover: #33cc33;
+$input-style-error: darkred;
+$input-txt-error: darkred;
+
+.map {
+    width: 90%;
+    margin: 0 auto;
+    height: 400px;
+    background-color: $map-bg-default;
+}
+
+.contacts {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+
+    &__info {
+        width: 50%;
+        display: flex;
+        flex-flow: column wrap;
+
+        &-share {
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+
+            &-list {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-self: center;
+            }
+
+            &-item {
+                margin: 5px;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            &-link {
+                svg {
+                    width: 30px;
+                    height: 30px;
+                    fill: $share-svg-fill;
+                }
+
+                &:hover {
+                    opacity: 0.7;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &-list {
+            li {
+                text-align: left;
+                display: flex;
+                align-items: center;
+                margin: 5px 0;
+        
+                img {
+                    height: 30px;
+                    width: 30px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    &__feedback {
+        width: 50%;
+
+        &-form {
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        &-input {
+            &-group {
+                width: 90%;
+                margin: 10px auto;
+            }
+
+            &_error {
+                box-shadow: 0 0 6px $input-style-error;
+                border: 0.5px solid $input-style-error;
+
+                &-msg {
+                    color: $input-txt-error;
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+            }
+
+            height: 50px;
+            width: 100%;
+            border: 0.5px solid $input-border;
+            border-radius: 10px;
+            outline: none;
+            padding: 9px;
+            font-size: 14px;
+            font-family: $main-font;
+            font-weight: 600;
+        }
+
+        &-text {
+            width: 90%;
+            padding: 10px;
+            margin: 10px auto;
+            border: 0.5px solid $textarea-border;
+            border-radius: 10px;
+            resize: none;
+            font-size: 14px;
+            font-family: $main-font;
+            font-weight: 600;
+            outline: none;
+
+            &_error {
+                border: 0.5px solid $input-style-error;
+                box-shadow: 0 0 6px $input-style-error;
+
+                &-msg {
+                    color: $input-txt-error;
+                    font-size: 12px;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &-btn {
+            height: 50px;
+            width: 150px;
+            color: $fb-text;
+            text-align: center;
+            background-color: $fb-bg;
+            font-size: 14px;
+            font-family: $main-font;
+            font-weight: 700;
+            border-radius: 25px;
+            border: 1px;
+            margin: 0 auto;
+
+            &:hover {
+                background-color: $fb-bg-hover;
+            }
+        }
+    }
+}

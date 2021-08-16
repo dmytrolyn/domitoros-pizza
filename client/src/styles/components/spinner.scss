@@ -1,0 +1,17 @@
+.loading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 1px;
+    height: 100px;
+}
+
+.el {
+    position: absolute;
+    opacity: 1;
+    width: 2px;
+    height: 28px;
+    margin-top: -12px;
+    transform-origin: 25% 100%;
+}
